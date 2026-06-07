@@ -2,7 +2,7 @@ let isLoading = true;
 let currentFilter = '*';
 let typedTextSpan = null;
 let cursorSpan = null;
-let textArray = ["Web Developer", "Sketch Artist", "Computer Engineering Student", "Creative Thinker"];
+let textArray = ["Software Developer", "Sketch Artist", "Computer Engineering Student"];
 let textArrayIndex = 0;
 let charIndex = 0;
 
