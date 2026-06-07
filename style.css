@@ -760,9 +760,7 @@ textarea.form-control {
 /* ============================================================
    9. SKILLS SECTION
    ============================================================ */
-.skills-section {
-  /* background set by section alternation rule */
-}
+
 
 .skills-group {
   margin-bottom: 2.5rem;
@@ -850,9 +848,6 @@ textarea.form-control {
 /* ============================================================
    10. PROJECTS SECTION
    ============================================================ */
-.projects-section {
-  /* background set by section rules */
-}
 
 .project-card {
   background-color: var(--bg-card);
@@ -1270,9 +1265,7 @@ textarea.form-control {
 /* ============================================================
    13. CONTACT
    ============================================================ */
-.contact-section {
-  /* background set by section alternation */
-}
+
 
 /* Contact info items */
 .contact-info {
