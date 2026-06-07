@@ -1,26 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <title>Bibek Ghimire - Developer & Artist</title>
+  <title>Bibek Ghimire — Developer & Artist</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Computer Engineering Student, Web Developer, and Sketch Artist from Lalitpur, Nepal">
-  <meta name="keywords" content="web developer, sketch artist, computer engineering, portfolio, nepal">
-  
-  
+  <meta name="description" content="Bibek Ghimire — Computer Engineering student at Lalitpur, Nepal. Building web apps with MERN & Spring Boot. Also a realistic pencil sketch artist available for commissions.">
+  <meta name="keywords" content="Bibek Ghimire, web developer, MERN stack, Spring Boot, sketch artist, computer engineering, Nepal, portfolio">
+  <meta name="author" content="Bibek Ghimire">
+
+  <!-- Open Graph / Social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ghimire-bibek.com.np/">
+  <meta property="og:title" content="Bibek Ghimire — Developer & Artist">
+  <meta property="og:description" content="Computer Engineering student building web apps and creating realistic pencil sketches. Open to internships, collaborations, and sketch commissions.">
+  <meta property="og:image" content="https://ghimire-bibek.com.np/img/intro.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bibek Ghimire — Developer & Artist">
+  <meta name="twitter:description" content="Computer Engineering student building web apps and creating realistic pencil sketches.">
+  <meta name="twitter:image" content="https://ghimire-bibek.com.np/img/intro.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="img/logo.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="https://cloudflare.com">
+
+
+  <!-- External CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-  
-  
+
+  <!-- Site CSS -->
   <link rel="stylesheet" href="style.css">
-  
-  
-  
-  <link rel="icon" type="image/x-icon" href="img/logo.png">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar">
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80">
+
+  <!-- ========================
+       PRELOADER
+  ========================= -->
   <div id="preloader">
     <div class="preloader-content">
       <div class="spinner"></div>
@@ -28,60 +49,103 @@
     </div>
   </div>
 
+  <!-- ========================
+       NAVBAR
+  ========================= -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
     <div class="container">
       <a class="navbar-brand" href="#home">
-        <i class="fas fa-code"></i>
-        Bibek Ghimire
+        <i class="fas fa-code"></i> Bibek Ghimire
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="sketches.html">Sketches</a></li>
           <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
+  <!-- ========================
+       HERO SECTION
+  ========================= -->
   <section id="home" class="hero">
     <div class="hero-particles"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
           <div class="hero-content">
-            <img src="img/intro.jpg" alt="Bibek Ghimire" class="hero-profile-img mb-4" data-aos="zoom-in" data-aos-delay="200">
-            <h1 class="hero-title">I am Bibek Ghimire</h1>
+
+            <img src="img/intro.jpg" alt="Bibek Ghimire" class="hero-profile-img mb-4"
+              data-aos="zoom-in" data-aos-delay="200">
+
+            <h1 class="hero-title">Hi, I'm Bibek Ghimire</h1>
+
+            <!-- Typing animation target — kept for script.js compatibility -->
             <div class="typing-container">
               <span class="typed-text"></span>
               <span class="cursor">&nbsp;</span>
             </div>
-            <p class="hero-subtitle mt-3">Crafting digital experiences and realistic portraits</p>
+
+            <p class="hero-subtitle mt-3">
+              Computer Engineering student from Nepal —
+              building web apps by day, drawing pencil portraits by night.
+            </p>
+
             <div class="hero-buttons mt-4">
-              <a href="#portfolio" class="btn btn-primary btn-lg me-3">View My Work</a>
+              <a href="#projects" class="btn btn-primary btn-lg me-3">View Projects</a>
               <a href="#contact" class="btn btn-outline-light btn-lg">Get In Touch</a>
             </div>
+
+            <!-- Quick social links in hero -->
+            <div class="hero-social mt-4">
+              <a href="https://github.com/bibek773" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/bibek-ghimire-1952292b1/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://www.instagram.com/bibekghimire773" target="_blank" rel="noopener" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/mr.bibek0" target="_blank" rel="noopener" aria-label="Facebook">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </div>
+
           </div>
         </div>
       </div>
     </div>
+
     <div class="scroll-indicator">
-      <a href="#about">
+      <a href="#about" aria-label="Scroll to About">
         <i class="fas fa-chevron-down"></i>
       </a>
     </div>
   </section>
 
+  <!-- ========================
+       ABOUT SECTION
+  ========================= -->
   <section id="about" class="section">
     <div class="container">
       <h2 class="section-title" data-aos="fade-up">About Me</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Developer by logic, artist by passion</p>
+
       <div class="row align-items-center">
-        <div class="col-lg-5 mb-4" data-aos="fade-right">
+
+        <!-- Photo -->
+        <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
           <div class="about-image-container">
             <img src="img/bg.png" alt="Bibek Ghimire" class="img-fluid rounded shadow about-image">
             <div class="image-overlay">
@@ -92,529 +156,761 @@
             </div>
           </div>
         </div>
+
+        <!-- Bio -->
         <div class="col-lg-7" data-aos="fade-left">
           <div class="about-content">
-            <h3 class="mb-3">Developer & Artist</h3>
-            <p class="lead">Hi! I'm currently pursuing a Bachelor's degree in Computer Engineering. I'm passionate about coding and creating realistic pencil portraits. I love balancing the logical world of programming with the expressive art of sketching.</p>
-            <p>My journey combines technical expertise with creative expression, allowing me to approach problems from both analytical and artistic perspectives.</p>
-            
+            <h3 class="mb-3">Developer &amp; Artist</h3>
+
+            <p class="lead">
+              I'm a Bachelor's student in Computer Engineering from Kathmandu, Nepal.
+              I am passionate about Software Development and currently exploring Spring Framework and Springboot.
+            </p>
+            <p>
+              Outside of code, I create realistic pencil portraits. Drawing and programming feel
+              surprisingly similar to me — both require patience, attention to detail, and a clear
+              vision of what you're building toward.
+            </p>
+            <p>
+              I'm currently looking for internship opportunities, open-source collaborations,
+              and sketch commission clients.
+            </p>
+
+            <!-- Info grid — no phone number -->
             <div class="row mt-4">
-              <div class="col-md-6">
+              <div class="col-sm-6">
                 <div class="info-item">
                   <i class="fas fa-user"></i>
                   <span><strong>Name:</strong> Bibek Ghimire</span>
                 </div>
                 <div class="info-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span><strong>Location:</strong> Kathmandu, Nepal</span>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="info-item">
                   <i class="fas fa-envelope"></i>
                   <span><strong>Email:</strong> bibekghimire773@gmail.com</span>
                 </div>
-              </div>
-              <div class="col-md-6">
                 <div class="info-item">
-                  <i class="fas fa-phone"></i>
-                  <span><strong>Phone:</strong> +977 9744323702</span>
-                </div>
-                <div class="info-item">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <span><strong>Location:</strong> Lalitpur, Nepal</span>
+                  <i class="fas fa-graduation-cap"></i>
+                  <span><strong>Degree:</strong> B.E. Computer Engineering <small>(running)</small></span>
                 </div>
               </div>
             </div>
 
             <div class="mt-4">
-              <a href="resume.pdf" class="btn btn-primary" target="_blank">
+              <a href="resume.pdf" class="btn btn-primary me-3" target="_blank" rel="noopener">
                 <i class="fas fa-download me-2"></i>Download Resume
+              </a>
+              <a href="#projects" class="btn btn-outline-secondary">
+                <i class="fas fa-code me-2"></i>See My Projects
               </a>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="skills-section mt-5" data-aos="fade-up">
-        <h3 class="text-center mb-4">Technical Skills & Expertise</h3>
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="skill-category">
-              <h5><i class="fas fa-code"></i> Programming Languages</h5>
-              <div class="skill-item">
-                <div class="skill-header">
-                  <span>C/C++</span>
-                  <span class="skill-percentage">85%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="85%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-header">
-                  <span>Java</span>
-                  <span class="skill-percentage">80%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="80%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-header">
-                  <span>Python</span>
-                  <span class="skill-percentage">75%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="75%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-header">
-                  <span>C#</span>
-                  <span class="skill-percentage">70%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="70%"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="skill-category">
-              <h5><i class="fas fa-palette"></i> Design & Development</h5>
-              <div class="skill-item">
-                <div class="skill-header">
-                  <span>HTML/CSS</span>
-                  <span class="skill-percentage">85%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="85%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-header">
-                  <span>Database Management</span>
-                  <span class="skill-percentage">75%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="75%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-header">
-                  <span>Pencil Sketching</span>
-                  <span class="skill-percentage">90%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="90%"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
 
+  <!-- ========================
+       SKILLS SECTION (new)
+  ========================= -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Skills &amp; Tools</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">What I work with</p>
+
+      <!-- Languages -->
+      <div class="skills-group" data-aos="fade-up" data-aos-delay="150">
+        <h5 class="skills-group-label">
+          <i class="fas fa-code me-2"></i>Languages
+        </h5>
+        <div class="skills-grid">
+          <div class="skill-chip">
+            <i class="fab fa-js-square"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-chip">
+            <span class="skill-chip-icon">C</span>
+            <span>C / C++</span>
+          </div>
+          <div class="skill-chip">
+            <i class="fab fa-java"></i>
+            <span>Java</span>
+          </div>
+          <div class="skill-chip">
+            <i class="fab fa-python"></i>
+            <span>Python</span>
+          </div>
+          <div class="skill-chip">
+            <span class="skill-chip-icon">C#</span>
+            <span>C#</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Frontend -->
+      <div class="skills-group" data-aos="fade-up" data-aos-delay="200">
+        <h5 class="skills-group-label">
+          <i class="fas fa-laptop-code me-2"></i>Frontend
+        </h5>
+        <div class="skills-grid">
+          <div class="skill-chip">
+            <i class="fab fa-html5"></i>
+            <span>HTML5</span>
+          </div>
+          <div class="skill-chip">
+            <i class="fab fa-css3-alt"></i>
+            <span>CSS3</span>
+          </div>
+          <div class="skill-chip">
+            <i class="fab fa-bootstrap"></i>
+            <span>Bootstrap</span>
+          </div>
+          <div class="skill-chip">
+            <i class="fab fa-react"></i>
+            <span>React <small>(learning)</small></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Backend -->
+      <div class="skills-group" data-aos="fade-up" data-aos-delay="250">
+        <h5 class="skills-group-label">
+          <i class="fas fa-server me-2"></i>Backend &amp; Databases
+        </h5>
+        <div class="skills-grid">
+          <div class="skill-chip">
+            <i class="fab fa-node-js"></i>
+            <span>Node.js <small>(learning)</small></span>
+          </div>
+          <div class="skill-chip">
+            <span class="skill-chip-icon">SF</span>
+            <span>Spring Framework <small>(exploring)</small></span>
+          </div>
+          <div class="skill-chip">
+            <span class="skill-chip-icon">SB</span>
+            <span>Spring Boot <small>(exploring)</small></span>
+          </div>
+          <div class="skill-chip">
+            <i class="fas fa-database"></i>
+            <span>MySQL</span>
+          </div>
+          <div class="skill-chip">
+            <i class="fas fa-leaf"></i>
+            <span>MongoDB <small>(learning)</small></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="skills-group" data-aos="fade-up" data-aos-delay="300">
+        <h5 class="skills-group-label">
+          <i class="fas fa-tools me-2"></i>Tools &amp; Other
+        </h5>
+        <div class="skills-grid">
+          <div class="skill-chip">
+            <i class="fab fa-git-alt"></i>
+            <span>Git</span>
+          </div>
+          <div class="skill-chip">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </div>
+          <div class="skill-chip">
+            <i class="fas fa-pencil-alt"></i>
+            <span>Pencil Sketching</span>
+          </div>
+          <div class="skill-chip">
+            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" style="margin-right:8px;display:inline-block;vertical-align:middle;">
+              <path fill="#0065A9" d="M16.24 2.47L6.73 11.03l-2.74-2.08L1.5 10.94l2.74 2.06L1.5 15.06l2.49 1.99 2.74-2.08 9.51 8.56 6.26-3V5.47z"/>
+              <path fill="#007ACC" d="M22.5 5.47l-6.26-3v21.06l6.26-3z"/>
+              <path fill="#1F9CF0" d="M16.24 2.47v5.61L9.92 13l6.32 4.92v5.61L6.73 14.97 3.99 17.05 1.5 15.06 4.24 13 1.5 10.94l2.49-1.99 2.74 2.08z"/>
+            </svg>
+            <span>VS Code</span>
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================
+       PROJECTS SECTION (new)
+  ========================= -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Developer Projects</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Things I've built and learned from</p>
+
+      <div class="row g-4">
+
+        <!-- Project 1: Student Management System -->
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fas fa-users-cog"></i>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">Java</span>
+                <span class="project-tag">MySQL</span>
+                <span class="project-tag">JDBC</span>
+              </div>
+            </div>
+            <h4 class="project-title">Student Management System  </h4>
+            <p class="project-desc">
+              A desktop application for managing student records, attendance, and grades.
+              Built with Java and connected to a MySQL database via JDBC. Supports
+              CRUD operations with a clean GUI.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Bibek773/StudentManagementSystem" target="_blank" rel="noopener" class="btn btn-sm btn-outline-primary">
+                <i class="fab fa-github me-1"></i>View on GitHub
+              </a>
+              <span class="project-status ms-2">
+                <i class="fas fa-circle-notch fa-spin me-1"></i>Currently working on
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: College App -->
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fas fa-university"></i>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">HTML/CSS</span>
+                <span class="project-tag">Java</span>
+                <span class="project-tag">JavaFX</span>
+              </div>
+            </div>
+            <h4 class="project-title">College App</h4>
+            <p class="project-desc">
+              Desktop Application for Management of college events
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Bibek773/CollegeApp" target="_blank" rel="noopener" class="btn btn-sm btn-outline-primary">
+                <i class="fab fa-github me-1"></i>View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: MERN Learning Project -->
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fab fa-react"></i>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">MongoDB</span>
+                <span class="project-tag">Express</span>
+                <span class="project-tag">React</span>
+                <span class="project-tag">Node.js</span>
+              </div>
+            </div>
+            <h4 class="project-title">MERN Stack Learning Project</h4>
+            <p class="project-desc">
+              Training and hands-on learning based project provided by DeerWalk.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Bibek773/mernStack" target="_blank" rel="noopener" class="btn btn-sm btn-outline-primary">
+                <i class="fab fa-github me-1"></i>View on GitHub
+              </a>
+              <span class="project-status ms-2">
+                <i class="fas fa-circle-notch fa-spin me-1"></i>In Progress
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Spring Boot Exploration -->
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fas fa-leaf"></i>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">Java</span>
+                <span class="project-tag">Spring Framework</span>
+                <span class="project-tag">REST API</span>
+              </div>
+            </div>
+            <h4 class="project-title">Spring Boot Backend Exploration</h4>
+            <p class="project-desc">
+              Learning Java Spring Boot to understand enterprise backend development.
+              Experimenting with RESTful API design, dependency injection, and
+              Spring Data JPA with relational databases.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Bibek773/JavaSpringBoot" target="_blank" rel="noopener" class="btn btn-sm btn-outline-primary">
+                <i class="fab fa-github me-1"></i>View on GitHub
+              </a>
+              <span class="project-status ms-2">
+                <i class="fas fa-flask me-1"></i>Exploring
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-5" data-aos="fade-up">
+        <a href="https://github.com/Bibek773" target="_blank" rel="noopener" class="btn btn-outline-primary btn-lg">
+          <i class="fab fa-github me-2"></i>See All Repositories on GitHub
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================
+       FEATURED SKETCHES SECTION
+       (was "Featured Work" / "Portfolio")
+  ========================= -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Featured Sketches</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+        Realistic pencil portraits — each one drawn by hand
+      </p>
+
+      <!-- Filter tabs kept for script.js compatibility -->
+      <div class="portfolio-filters text-center mb-4" data-aos="fade-up" data-aos-delay="150">
+        <button class="filter-btn active" data-filter="all">All Sketches</button>
+      </div>
+
+      <div class="row g-4" id="portfolio-grid">
+
+        <div class="col-lg-4 col-md-6 portfolio-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrapper">
+              <img src="img/work-1.jpg" alt="Acharya Rajneesh (OSHO) — pencil sketch" class="img-fluid">
+              <div class="portfolio-overlay">
+                <button class="portfolio-zoom-btn" onclick="openLightbox('img/work-1.jpg', 'Acharya Rajneesh (OSHO)')" aria-label="View full size">
+                  <i class="fas fa-search-plus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h5>Acharya Rajneesh (OSHO)</h5>
+              <span class="portfolio-date">Oct 2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item" data-aos="fade-up" data-aos-delay="250">
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrapper">
+              <img src="img/work-2.jpg" alt="Yamuna Ghimire — pencil sketch" class="img-fluid">
+              <div class="portfolio-overlay">
+                <button class="portfolio-zoom-btn" onclick="openLightbox('img/work-2.jpg', 'Yamuna Ghimire')" aria-label="View full size">
+                  <i class="fas fa-search-plus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h5>Yamuna Ghimire</h5>
+              <span class="portfolio-date">Dec 2023</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrapper">
+              <img src="img/work-3.jpg" alt="Self Portrait — pencil sketch" class="img-fluid">
+              <div class="portfolio-overlay">
+                <button class="portfolio-zoom-btn" onclick="openLightbox('img/work-3.jpg', 'Self Portrait')" aria-label="View full size">
+                  <i class="fas fa-search-plus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h5>Self Portrait</h5>
+              <span class="portfolio-date">Jan 2023</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrapper">
+              <img src="img/work-4.jpg" alt="Himal-Saru — pencil sketch" class="img-fluid">
+              <div class="portfolio-overlay">
+                <button class="portfolio-zoom-btn" onclick="openLightbox('img/work-4.jpg', 'Himal-Saru')" aria-label="View full size">
+                  <i class="fas fa-search-plus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h5>Himal-Saru</h5>
+              <span class="portfolio-date">Dec 2023</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item" data-aos="fade-up" data-aos-delay="250">
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrapper">
+              <img src="img/work-5.jpg" alt="Puspa Raj (Allu Arjun) — pencil sketch" class="img-fluid">
+              <div class="portfolio-overlay">
+                <button class="portfolio-zoom-btn" onclick="openLightbox('img/work-5.jpg', 'Puspa Raj (Allu Arjun)')" aria-label="View full size">
+                  <i class="fas fa-search-plus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h5>Puspa Raj (Allu Arjun)</h5>
+              <span class="portfolio-date">Feb 2022</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrapper">
+              <img src="img/work-6.jpg" alt="King Birendra — pencil sketch" class="img-fluid">
+              <div class="portfolio-overlay">
+                <button class="portfolio-zoom-btn" onclick="openLightbox('img/work-6.jpg', 'King Birendra')" aria-label="View full size">
+                  <i class="fas fa-search-plus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h5>King Birendra</h5>
+              <span class="portfolio-date">May 2023</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-5" data-aos="fade-up">
+        <a href="sketches.html" class="btn btn-primary btn-lg me-3">
+          <i class="fas fa-images me-2"></i>View Full Gallery
+        </a>
+        <a href="https://www.instagram.com/bibek5508" target="_blank" rel="noopener" class="btn btn-outline-primary btn-lg">
+          <i class="fab fa-instagram me-2"></i>Instagram
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Lightbox (kept from original — script.js controls this) -->
+  <div id="lightbox" class="lightbox" style="display:none;">
+    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <!-- ========================
+       SERVICES SECTION
+       (Mobile Dev removed)
+  ========================= -->
   <section id="services" class="section services-section">
     <div class="container">
       <h2 class="section-title" data-aos="fade-up">Services</h2>
-      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">What I can do for you</p>
-      
-      <div class="row justify-content-center">
-        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="service-card h-100">
-            <div class="service-icon">
-              <i class="fas fa-code"></i>
-            </div>
-            <h4>Web Development</h4>
-            <p>Creating responsive and dynamic web applications using modern technologies and best practices.</p>
-            <ul class="service-features">
-              <li>Responsive Design</li>
-              <li>Modern Frameworks</li>
-              <li>Database Integration</li>
-            </ul>
-          </div>
-        </div>
-        
-        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="service-card h-100">
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">What I can help you with</p>
+
+      <div class="row justify-content-center g-4">
+
+       
+        <!-- Pencil Sketch Portraits -->
+        <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-card h-100 service-card--featured">
             <div class="service-icon">
               <i class="fas fa-pencil-alt"></i>
             </div>
             <h4>Pencil Sketch Portraits</h4>
-            <p>Bringing life to paper with realistic and expressive pencil drawings. Commission your unique piece today!</p>
+            <p>
+              Realistic hand-drawn pencil portraits on high-quality paper.
+              I take custom commissions for people, pets, and memorable moments.
+            </p>
             <ul class="service-features">
-              <li>Realistic Portraits</li>
-              <li>Custom Commissions</li>
-              <li>High Quality Paper</li>
+              <li>Realistic portrait style</li>
+              <li>Custom commissions</li>
+              <li>High-quality cartridge paper</li>
+              <li>Photo reference accepted</li>
             </ul>
-            <div class="service-price">
+            <div class="service-price mt-3">
               <span class="price">Rs 3,500/-</span>
-              <span class="price-note">Starting Price</span>
+              <span class="price-note">Starting price</span>
             </div>
-            <button type="button" class="btn btn-primary mt-3" onclick="showCommissionModal()">
-              Commission Sketch
-            </button>
+            <div class="service-cta mt-3">
+              <button class="btn btn-primary btn-sm" onclick="openCommissionModal()">
+                Commission a Sketch
+              </button>
+            </div>
           </div>
         </div>
-        
-        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
-          <div class="service-card h-100">
-            <div class="service-icon">
-              <i class="fas fa-mobile-alt"></i>
-            </div>
-            <h4>Mobile Development</h4>
-            <p>Building cross-platform mobile applications with intuitive user interfaces and smooth performance.</p>
-            <ul class="service-features">
-              <li>Cross-Platform Apps</li>
-              <li>User-Friendly UI</li>
-              <li>Performance Optimized</li>
-            </ul>
-          </div>
-        </div>
+
       </div>
     </div>
   </section>
 
-  <section id="portfolio" class="section">
-    <div class="container">
-        <h2 class="section-title" data-aos="fade-up">Featured Work</h2>
-        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Discover the artistry behind meticulously crafted pencil sketches</p>
-        
-        <div class="portfolio-filters text-center mb-5" data-aos="fade-up" data-aos-delay="200">
-            <button class="filter-btn active" data-filter="*">Sketches</button>
-        </div>
-        
-        <div class="portfolio-grid">
-            <div class="portfolio-item" data-category="celebrities" data-aos="fade-up" data-aos-delay="200">
-                <div class="portfolio-card">
-                    <img src="img/work-1.jpg" alt="Acharya Rajneesh" >
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-content">
-                            <h5>Acharya Rajneesh (OSHO)</h5>
-                            <p>Oct 2024</p>
-                            <div class="portfolio-buttons">
-                                <button class="btn-view" onclick="openLightbox('img/work-1.jpg', 'Acharya Rajneesh (OSHO)', 'Oct 2024')">
-                                    <i class="fas fa-eye"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="portfolio-item" data-category="portraits" data-aos="fade-up" data-aos-delay="300">
-              <div class="portfolio-card">
-                <img src="img/work-2.jpg" alt="Yamuna Ghimire" >
-                <div class="portfolio-overlay">
-                  <div class="portfolio-content">
-                    <h5>Yamuna Ghimire</h5>
-                    <p>Dec 2023</p>
-                    <div class="portfolio-buttons">
-                      <button class="btn-view" onclick="openLightbox('img/work-2.jpg', 'Yamuna Ghimire', 'Dec 2023')">
-                        <i class="fas fa-eye"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            
-            <div class="portfolio-item" data-category="personal" data-aos="fade-up" data-aos-delay="400">
-                <div class="portfolio-card">
-                    <img src="img/work-3.jpg" alt="Self Portrait">
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-content">
-                            <h5>Self Portrait</h5>
-                            <p>Jan 2023</p>
-                            <div class="portfolio-buttons">
-                                <button class="btn-view" onclick="openLightbox('img/work-3.jpg', 'Self Portrait', 'Jan 2023')">
-                                    <i class="fas fa-eye"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="portfolio-item" data-category="portraits" data-aos="fade-up" data-aos-delay="500">
-                <div class="portfolio-card">
-                    <img src="img/work-4.jpg" alt="Himal-Saru">
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-content">
-                            <h5>Himal-Saru</h5>
-                            <p>Dec 2023</p>
-                            <div class="portfolio-buttons">
-                                <button class="btn-view" onclick="openLightbox('img/work-4.jpg', 'Himal-Saru', 'Dec 2023')">
-                                    <i class="fas fa-eye"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="portfolio-item" data-category="celebrities" data-aos="fade-up" data-aos-delay="600">
-                <div class="portfolio-card">
-                    <img src="img/work-5.jpg" alt="Allu Arjun">
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-content">
-                            <h5>Puspa Raj (Allu Arjun)</h5>
-                            <p>Feb 2022</p>
-                            <div class="portfolio-buttons">
-                                <button class="btn-view" onclick="openLightbox('img/work-5.jpg', 'Puspa Raj (Allu Arjun)', 'Feb 2022')">
-                                    <i class="fas fa-eye"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="portfolio-item" data-category="celebrities" data-aos="fade-up" data-aos-delay="700">
-                <div class="portfolio-card">
-                    <img src="img/work-6.jpg" alt="King Birendra">
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-content">
-                            <h5>King Birendra</h5>
-                            <p>May 2023</p>
-                            <div class="portfolio-buttons">
-                                <button class="btn-view" onclick="openLightbox('img/work-6.jpg', 'King Birendra', 'May 2023')">
-                                    <i class="fas fa-eye"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<div id="lightbox" class="lightbox">
-    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
-    <div class="lightbox-container">
-        <img id="lightbox-img" class="lightbox-content" src="" alt="">
-        <div class="lightbox-info">
-            <h4 id="lightbox-title"></h4>
-            <p id="lightbox-date"></p>
-        </div>
-    </div>
-</div>
+  <!-- ========================
+       CONTACT SECTION
+       (phone removed, WhatsApp removed)
+  ========================= -->
   <section id="contact" class="section contact-section">
     <div class="container">
-      <h2 class="section-title text-white" data-aos="fade-up">Get In Touch</h2>
-      <p class="section-subtitle text-light" data-aos="fade-up" data-aos-delay="100">Let's work together to bring your ideas to life</p>
-      
-      <div class="row justify-content-center">
-        <div class="col-lg-10">
-          <div class="row">
-            <div class="col-lg-6 mb-4" data-aos="fade-right">
-              <div class="contact-info">
-                <div class="contact-item">
-                  <div class="contact-icon">
-                    <i class="fas fa-map-marker-alt"></i>
-                  </div>
-                  <div class="contact-details">
-                    <h5>Location</h5>
-                    <p>Lalitpur, Nepal</p>
-                  </div>
-                </div>
-                
-                <div class="contact-item">
-                  <div class="contact-icon">
-                    <i class="fas fa-phone"></i>
-                  </div>
-                  <div class="contact-details">
-                    <h5>Phone</h5>
-                    <p>+977 9744323702</p>
-                  </div>
-                </div>
-                
-                <div class="contact-item">
-                  <div class="contact-icon">
-                    <i class="fas fa-envelope"></i>
-                  </div>
-                  <div class="contact-details">
-                    <h5>Email</h5>
-                    <p>bibekghimire773@gmail.com</p>
-                  </div>
-                </div>
-                
-                <div class="social-links mt-4">
-                  <a href="https://www.facebook.com/mr.bibek0" target="_blank" aria-label="Facebook">
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="https://www.instagram.com/bibek5508" target="_blank" aria-label="Instagram">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                  <a href="https://www.linkedin.com/in/bibek-ghimire-1952292b1/" target="_blank" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin-in"></i>
-                  </a>
-                  <a href="https://wa.me/qr/7WLA5X64XXNLC1" target="_blank" aria-label="WhatsApp">
-                    <i class="fab fa-whatsapp"></i>
-                  </a>
-                  <a href="https://github.com/bibek773" target="_blank" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                  </a>
-                </div>
+      <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+        Internship enquiries, project collaborations, or sketch commissions — I'd love to hear from you.
+      </p>
+
+      <div class="row g-5">
+
+        <!-- Contact Info -->
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="contact-info">
+
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h6>Location</h6>
+                <p>Kathmandu, Nepal</p>
               </div>
             </div>
-            
-            <div class="col-lg-6" data-aos="fade-left">
-              <form class="contact-form" id="contactForm">
-                <div class="row">
-                  <div class="col-md-6 mb-3">
-                    <input type="text" class="form-control" name="name" placeholder="Your Name" required>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-                  </div>
-                </div>
-                <div class="mb-3">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required>
-                </div>
-                <div class="mb-3">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Your Message" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary btn-lg w-100">
-                  <i class="fas fa-paper-plane me-2"></i>Send Message
-                </button>
-              </form>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h6>Email</h6>
+                <p><a href="mailto:bibekghimire773@gmail.com">bibekghimire773@gmail.com</a></p>
+              </div>
             </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div>
+                <h6>Status</h6>
+                <p>B.E. Computer Engineering — Open to internships</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Social Links -->
+          <div class="contact-socials mt-4">
+            <a href="https://www.facebook.com/mr.bibek0" target="_blank" rel="noopener" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/bibek5508" target="_blank" rel="noopener" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/bibek-ghimire-1952292b1/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/bibek773" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
           </div>
         </div>
+
+        <!-- Contact Form -->
+        <div class="col-lg-7" data-aos="fade-left">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="contactName" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="contactName" name="name"
+                  placeholder="Hari Bahadur" required>
+              </div>
+              <div class="col-md-6">
+                <label for="contactEmail" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="contactEmail" name="email"
+                  placeholder="hari@example.com" required>
+              </div>
+              <div class="col-12">
+                <label for="contactSubject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="contactSubject" name="subject"
+                  placeholder="Internship enquiry / Sketch commission / Collaboration">
+              </div>
+              <div class="col-12">
+                <label for="contactMessage" class="form-label">Message</label>
+                <textarea class="form-control" id="contactMessage" name="message"
+                  rows="5" placeholder="Tell me what you have in mind..." required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary w-100">
+                  <i class="fas fa-paper-plane me-2"></i>Send Message
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <footer class="footer">
+  <!-- ========================
+       FOOTER
+  ========================= -->
+  <footer class="site-footer">
     <div class="container">
-      <div class="row">
-        <div class="col-md-6 footer-content text-left">
-          <p>&copy; 2025 Bibek Ghimire. All rights reserved.</p>
+      <div class="footer-top" style="margin-bottom: 0.75rem;">
+        <div class="footer-brand">
+          <a class="navbar-brand" href="#home">
+            <i class="fas fa-code"></i> Bibek Ghimire
+          </a>
+          <p class="footer-tagline">Computer Engineering Student · Developer · Sketch Artist</p>
         </div>
-        <div class="col-md-6 footer-content text-right" style="align-items: center; display: flex; justify-content: flex-end;">
-          <p><a href="grandma.html"><i>In the loving memory of my grandmother.</i></a></p>
-          p><a href="tracker.html"><i>app</i></a></p>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="sketches.html">Sketches</a>
+          <a href="#contact">Contact</a>
         </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2025 Bibek Ghimire. All rights reserved.</p>
+        
       </div>
     </div>
   </footer>
 
+  <!-- Back to top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
 
-
-  <div class="modal fade" id="commissionModal" tabindex="-1">
+  <!-- ========================
+       COMMISSION MODAL
+       (phone / Call Now removed)
+  ========================= -->
+  <div id="commissionModal" class="modal fade" tabindex="-1" aria-labelledby="commissionModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content" style="background-color: white; color: #333;">
-        <div class="modal-header" style="background-color: #f8f9fa; border-bottom: 1px solid #dee2e6;">
-          <h5 class="modal-title" style="color: #333; font-weight: 600;">Commission a Sketch</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="commissionModalLabel">
+            <i class="fas fa-pencil-alt me-2"></i>Commission a Sketch
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body" style="background-color: white; color: #333; padding: 2rem;">
-          <p style="color: #333; margin-bottom: 1rem; font-size: 1.1rem;">Thank you for your interest in commissioning a sketch!</p>
-          <p style="color: #666; margin-bottom: 1.5rem;">Please contact me directly to discuss your requirements:</p>
-          <div class="commission-options" style="text-align: center;">
-            <a href="tel:+9779744323702" class="btn btn-outline-primary me-2" style="border-color: #007bff; color: #007bff;">
-              <i class="fas fa-phone"></i> Call Now
-            </a>
-            <a href="mailto:bibekghimire773@gmail.com" class="btn btn-outline-primary" style="border-color: #007bff; color: #007bff;">
-              <i class="fas fa-envelope"></i> Send Email
-            </a>
-          </div>
+        <div class="modal-body">
+          <p>Thank you for your interest in commissioning a sketch!</p>
+          <p>Please reach out via email or Instagram and I'll get back to you with details on pricing, timeline, and what reference photo works best.</p>
+          <ul class="commission-details">
+            <li><i class="fas fa-check me-2"></i>Starting from <strong>Rs 3,500/-</strong></li>
+            <li><i class="fas fa-check me-2"></i>High-quality cartridge paper</li>
+            <li><i class="fas fa-check me-2"></i>Realistic pencil portrait style</li>
+            <li><i class="fas fa-check me-2"></i>Clear photo reference needed</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <a href="mailto:bibekghimire773@gmail.com" class="btn btn-primary">
+            <i class="fas fa-envelope me-2"></i>Email Me
+          </a>
+          <a href="https://www.instagram.com/bibek5508" target="_blank" rel="noopener" class="btn btn-outline-secondary">
+            <i class="fab fa-instagram me-2"></i>Instagram
+          </a>
         </div>
       </div>
     </div>
   </div>
 
- 
-  <button id="backToTop" class="back-to-top" aria-label="Back to top">
-    <i class="fas fa-chevron-up"></i>
-  </button>
-
-  <script src="script.js"></script>
+  <!-- ========================
+       SCRIPTS
+  ========================= -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
-AOS.init({
-    duration: 1000,
-    easing: 'ease-in-out',
-    once: true,
-    mirror: false,
-    offset: 100
-});
+  <!-- Inline bridge functions so script.js modal/lightbox calls still work -->
+  <script>
+    // Commission modal (used by service card button)
+    function openCommissionModal() {
+      var modal = new bootstrap.Modal(document.getElementById('commissionModal'));
+      modal.show();
+    }
 
-document.addEventListener('DOMContentLoaded', function() {
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const portfolioItems = document.querySelectorAll('.portfolio-item');
-    
-    filterBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
-            const filter = this.getAttribute('data-filter');
-            
-            filterBtns.forEach(b => b.classList.remove('active'));
-            this.classList.add('active');
-            
-            portfolioItems.forEach(item => {
-                const category = item.getAttribute('data-category');
-                
-                if (filter === '*' || category === filter) {
-                    item.classList.remove('hidden');
-                    item.style.display = 'block';
-                } else {
-                    item.classList.add('hidden');
-                    setTimeout(() => {
-                        if (item.classList.contains('hidden')) {
-                            item.style.display = 'none';
-                        }
-                    }, 300);
-                }
-            });
-        });
+    // Lightbox (used by portfolio card buttons)
+    function openLightbox(src, title) {
+      var lb = document.getElementById('lightbox');
+      var img = document.getElementById('lightbox-img');
+      img.src = src;
+      img.alt = title;
+      lb.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+      document.body.style.overflow = '';
+    }
+
+    // Close lightbox on background click
+    document.getElementById('lightbox').addEventListener('click', function(e) {
+      if (e.target === this) closeLightbox();
     });
-});
+  </script>
 
-function openLightbox(imageSrc, title, date) {
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-    const lightboxTitle = document.getElementById('lightbox-title');
-    const lightboxDate = document.getElementById('lightbox-date');
-    
-    if (lightbox && lightboxImg && lightboxTitle && lightboxDate) {
-        lightboxImg.src = imageSrc;
-        lightboxImg.alt = title;
-        lightboxTitle.textContent = title;
-        lightboxDate.textContent = date;
-        lightbox.style.display = 'block';
-        document.body.style.overflow = 'hidden';
-        
-        setTimeout(() => {
-            lightbox.classList.add('show');
-        }, 10);
-    }
-}
+  <!-- UI behaviour hooks for CSS classes defined in style.css -->
+  <script>
+    // AOS init
+    AOS.init({ duration: 600, once: true, offset: 60 });
 
-function closeLightbox() {
-    const lightbox = document.getElementById('lightbox');
-    if (lightbox) {
-        lightbox.classList.remove('show');
-        setTimeout(() => {
-            lightbox.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }, 300);
-    }
-}
+    // Preloader
+    window.addEventListener('load', function () {
+      var pre = document.getElementById('preloader');
+      if (pre) {
+        setTimeout(function () { pre.classList.add('loaded'); }, 300);
+      }
+    });
 
-document.getElementById('lightbox').addEventListener('click', function(e) {
-    if (e.target === this) {
-        closeLightbox();
-    }
-});
+    // Navbar: add .scrolled when page scrolls past hero
+    (function () {
+      var nav = document.getElementById('navbar');
+      function onScroll() {
+        if (window.scrollY > 60) {
+          nav.classList.add('scrolled');
+        } else {
+          nav.classList.remove('scrolled');
+        }
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    })();
 
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape' && document.getElementById('lightbox').style.display === 'block') {
-        closeLightbox();
-    }
-});
-</script>
+    // Back to top button
+    (function () {
+      var btn = document.getElementById('backToTop');
+      if (!btn) return;
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 400) {
+          btn.classList.add('visible');
+        } else {
+          btn.classList.remove('visible');
+        }
+      }, { passive: true });
+      btn.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
+  </script>
+
+  <!-- Original site script — unchanged -->
+  <script src="script.js"></script>
+
 </body>
 </html>
